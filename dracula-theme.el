@@ -79,24 +79,24 @@ read it before opening a new issue about your will.")
 ;; Assigment form: VARIABLE COLOR [256-COLOR [TTY-COLOR]]
 (let ((colors '(;; Upstream theme color
                 (dracula-bg      "#282a36" "unspecified-bg" "unspecified-bg") ; official background
-                (dracula-fg      "#f8f8f2" "#ffffff" "brightwhite") ; official foreground
-                (dracula-current "#44475a" "#303030" "brightblack") ; official current-line/selection
+                (dracula-fg      "#fdfdf8" "#ffffff" "white") ; official foreground
+                (dracula-current "#44475a" "#303030" "black") ; official current-line/selection
                 (dracula-comment "#6272a4" "#5f5faf" "blue")        ; official comment
-                (dracula-cyan    "#8be9fd" "#87d7ff" "brightcyan")  ; official cyan
+                (dracula-cyan    "#8be9fd" "#87d7ff" "cyan")  ; official cyan
                 (dracula-green   "#50fa7b" "#5fff87" "green")       ; official green
-                (dracula-orange  "#ffb86c" "#ffaf5f" "brightred")   ; official orange
+                (dracula-orange  "#ffb86c" "#ffaf5f" "red")   ; official orange
                 (dracula-pink    "#ff79c6" "#ff87d7" "magenta")     ; official pink
-                (dracula-purple  "#bd93f9" "#af87ff" "brightmagenta") ; official purple
+                (dracula-purple  "#bd93f9" "#af87ff" "magenta") ; official purple
                 (dracula-red     "#ff5555" "#ff8787" "red")         ; official red
                 (dracula-yellow  "#f1fa8c" "#ffff87" "yellow")      ; official yellow
                 ;; Other colors
-                (bg2             "#373844" "#121212" "brightblack")
-                (bg3             "#464752" "#262626" "brightblack")
-                (bg4             "#565761" "#444444" "brightblack")
-                (fg2             "#e2e2dc" "#e4e4e4" "brightwhite")
+                (bg2             "#373844" "#121212" "black")
+                (bg3             "#464752" "#262626" "black")
+                (bg4             "#565761" "#444444" "black")
+                (fg2             "#e2e2dc" "#e4e4e4" "white")
                 (fg3             "#ccccc7" "#c6c6c6" "white")
                 (fg4             "#b6b6b2" "#b2b2b2" "white")
-                (other-blue      "#0189cc" "#0087ff" "brightblue")))
+                (other-blue      "#0189cc" "#0087ff" "blue")))
       (faces '(;; default
                (cursor :background ,fg3)
                (completions-first-difference :foreground ,dracula-pink :weight bold)
