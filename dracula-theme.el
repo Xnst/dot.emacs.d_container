@@ -17,7 +17,7 @@
 (require 'cl-lib)
 (deftheme dracula)
 
-
+
 ;;;; Configuration options:
 
 (defgroup dracula nil
@@ -73,7 +73,7 @@ There is a lot of discussion behind the 256 colors theme (see URL
 `https://github.com/dracula/emacs/pull/57').  Please take time to
 read it before opening a new issue about your will.")
 
-
+
 ;;;; Theme definition:
 
 ;; Assigment form: VARIABLE COLOR [256-COLOR [TTY-COLOR]]
@@ -726,7 +726,7 @@ read it before opening a new issue about your will.")
                                (t                       ; should be only tty-like envs
                                 ,(funcall expand-for-kind 'tty-colors spec))))))))
 
-
+
 ;;;###autoload
 (when load-file-name
   (add-to-list 'custom-theme-load-path
