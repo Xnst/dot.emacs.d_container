@@ -1,0 +1,4 @@
+[MASTER]
+disable=
+    C0114, # missing-module-docstring
+    invalid-name,  # hope to remove warning messages about upper_case variables
